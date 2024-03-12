@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF089B4A2B98F64B00158E9C /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089B492B98F64B00158E9C /* ProgressRing.swift */; };
+		BF089B4C2B99296400158E9C /* FastingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089B4B2B99296400158E9C /* FastingManager.swift */; };
 		BF394B6F2B98EB69007B7B6B /* FastingTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF394B6E2B98EB69007B7B6B /* FastingTrackerApp.swift */; };
 		BF394B712B98EB69007B7B6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF394B702B98EB69007B7B6B /* ContentView.swift */; };
-		BF394B732B98EB69007B7B6B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF394B722B98EB69007B7B6B /* Item.swift */; };
 		BF394B752B98EB6B007B7B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF394B742B98EB6B007B7B6B /* Assets.xcassets */; };
 		BF394B782B98EB6B007B7B6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF394B772B98EB6B007B7B6B /* Preview Assets.xcassets */; };
 		BF394B822B98EB6B007B7B6B /* FastingTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF394B812B98EB6B007B7B6B /* FastingTrackerTests.swift */; };
@@ -35,10 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF089B492B98F64B00158E9C /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
+		BF089B4B2B99296400158E9C /* FastingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingManager.swift; sourceTree = "<group>"; };
 		BF394B6B2B98EB69007B7B6B /* FastingTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastingTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF394B6E2B98EB69007B7B6B /* FastingTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingTrackerApp.swift; sourceTree = "<group>"; };
 		BF394B702B98EB69007B7B6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BF394B722B98EB69007B7B6B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BF394B742B98EB6B007B7B6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF394B772B98EB6B007B7B6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF394B7D2B98EB6B007B7B6B /* FastingTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastingTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +100,8 @@
 			children = (
 				BF394B6E2B98EB69007B7B6B /* FastingTrackerApp.swift */,
 				BF394B702B98EB69007B7B6B /* ContentView.swift */,
-				BF394B722B98EB69007B7B6B /* Item.swift */,
+				BF089B492B98F64B00158E9C /* ProgressRing.swift */,
+				BF089B4B2B99296400158E9C /* FastingManager.swift */,
 				BF394B742B98EB6B007B7B6B /* Assets.xcassets */,
 				BF394B762B98EB6B007B7B6B /* Preview Content */,
 			);
@@ -261,7 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF394B712B98EB69007B7B6B /* ContentView.swift in Sources */,
-				BF394B732B98EB69007B7B6B /* Item.swift in Sources */,
+				BF089B4A2B98F64B00158E9C /* ProgressRing.swift in Sources */,
+				BF089B4C2B99296400158E9C /* FastingManager.swift in Sources */,
 				BF394B6F2B98EB69007B7B6B /* FastingTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,11 +433,12 @@
 				DEVELOPMENT_TEAM = P5ZE3X7HVR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fasting Tracker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,11 +463,12 @@
 				DEVELOPMENT_TEAM = P5ZE3X7HVR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fasting Tracker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
